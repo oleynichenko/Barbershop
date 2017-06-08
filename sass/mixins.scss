@@ -5,15 +5,66 @@
   @if $weight { font-weight: $weight; }
   @if $lh { line-height: $lh; }
 }
+
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
   content: $content;
   display: $display;
   position: $pos;
 }
+
 @mixin clearfix {
 	&::after {
 		content: "";
 		clear: both;
 		display: table;		
 	}
+}
+
+@mixin reset-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes smooth-show {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@mixin btn {
+  font: inherit;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  text-transform: inherit;
+  background-color: transparent;
+
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+// Миксины для Barbrshop 
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media ($tablet-width) {
+    width: 640px;
+  }
+
+  @media ($desktop-width) {
+    width: 960px;
+  }
+}
+
+@mixin container-fluid {
+  width: auto;
+
+  @media ($tablet-width) {
+    width: 84%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }

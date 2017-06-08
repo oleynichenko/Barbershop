@@ -1,0 +1,23 @@
+.footer__wrapper {
+	@include container();
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+.footer__contacts {
+	margin: 0 20px;
+	margin-bottom: 25px;
+}
+.footer__social {
+	margin-bottom: 35px;
+}
+.footer__copyright {
+	margin: 0 20px;
+}
+@media ($tablet-width) {
+	.footer__wrapper {
+		padding-top: 50px;
+		padding-bottom: 55px;
+		margin-bottom: 25px;
+	}
+
+}	

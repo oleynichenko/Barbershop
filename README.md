@@ -1,2 +1,2 @@
-# start-project
-New project's source files for assembly
+# barbershop
+Learning project from HTML Academy
