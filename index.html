@@ -14,7 +14,7 @@
 			<picture>
 			  <source media="(min-width: 1200px)" srcset="img/logo-dsk.png">
 			  <source media="(min-width: 768px)" srcset="img/logo-tb.png">
-				<img src="img/logo-tb.png" alt="Барбершоп Бородинский" width="370" height="101">
+				<img src="img/logo.png" alt="Барбершоп Бородинский">
 			</picture>
 		</div>
 		<nav class="main-nav main-nav--closed main-nav--nojs">
@@ -22,7 +22,7 @@
 			<div class="main-nav__wrapper">
 				<ul class="main-nav__items">
 					<li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-					<li class="main-nav__item"><a href="#">Наши работы</a></li>	
+					<li class="main-nav__item"><a href="works.html">Работы</a></li>	
 					<li class="main-nav__item"><a href="#">Записаться</a></li>
 					<li class="main-nav__item"><a href="#">Контакты</a></li>
 					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
@@ -113,21 +113,27 @@
 			<input type="radio" class="slider__input" name="reviews" id="reviews-input-1" checked>
 			<input type="radio" class="slider__input" name="reviews" id="reviews-input-2">
 			<input type="radio" class="slider__input" name="reviews" id="reviews-input-3">
-			<div class="reviews__items">
+			<div class="reviews__items slider__items">
 				<blockquote class="reviews__item slider__item">
-					<div class="reviews__author-photo"><img src="" alt="Фото Трэвис Баркер"></div>
+					<div class="reviews__author-photo">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/travis-bg.jpg">
+							<source media="(min-width: 768px)" srcset="img/travis-m.png">
+							<img src="img/travis-sm.jpg" alt="Фото Трэвис Баркер">
+						</picture>
+					</div>
 					<cite class="reviews__author-name">Трэвис Баркер</cite>
 					<p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
 				</blockquote>
 				<blockquote class="reviews__item slider__item">
 					<div class="reviews__author-photo"><img src="" alt="Фото Трэвис Баркер"></div>
 					<cite class="reviews__author-name">Трэвис Баркер</cite>
-					<p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+					<p>Спасибо за лысину!Заскочил побриться, чтобы было видно новую татуировку!</p>
 				</blockquote>
 				<blockquote class="reviews__item slider__item">
 					<div class="reviews__author-photo"><img src="" alt="Фото Трэвис Баркер"></div>
 					<cite class="reviews__author-name">Трэвис Баркер</cite>
-					<p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+					<p>Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
 				</blockquote>
 				<button class="reviews__prev" type="button">Предыдущий отзыв</button>
 				<button class="reviews__next" type="button">Следующий отзыв</button>
@@ -148,15 +154,15 @@
 				<a href="tel: +7 (812) 555-66-66"><span class="footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
 			</p>
 			<p class="footer__social">
-				Давайте дружить!
+				<span class="footer__social-hidden">Давайте дружить!</span>
 				<span class="social-links">
 					<a href="" class="social-link social-link--vk">Мы в ВКОНТАКТЕ</a>
 					<a href="" class="social-link social-link--fb">Мы в Фейсбук</a>
-					<a href="" class="social-link social-link--insta">Мы в Инстаграмме</a>
+					<a href="" class="social-link social-link--in">Мы в Инстаграмме</a>
 				</span>
 			</p>
 			<p class="footer__copyright">Разработано:
-				<a href="" class="btn footer__copyright-link">HTML ACADEMY</a>
+				<a href="" class="footer__copyright-link">HTML ACADEMY</a>
 			</p>
 		</div>
 	</footer>

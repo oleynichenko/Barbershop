@@ -1,8 +1,6 @@
 .header {
 	display: flex;
 	flex-direction: column;
-
-	// background-color: #000000;
 }
 
 .header__logo {
@@ -28,8 +26,12 @@
 		background-image: url(../../img/bg.jpg);	
 		background-repeat: no-repeat;
 		background-position:  center -15px;
+
+		&--short-height {
+			height: 215px;
+		}
 	}
-	
+
 	.header__logo img {
 		width: 370px;
 		height: 101px;
@@ -37,11 +39,16 @@
 		margin-top: 30px;
 	}
 }
+
 @media ($desktop-width) {
 	.header__logo {
 		height: 648px;
 
 		background-size: cover;
+
+		&--short-height {
+			height: 310px;
+		}
 	}
 	
 	.header__logo img {

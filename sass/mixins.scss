@@ -32,12 +32,15 @@
 }
 
 @mixin btn {
-  font: inherit;
   padding: 0;
+  
   border: none;
-  cursor: pointer;
+
+  font: inherit;
   text-transform: inherit;
+
   background-color: transparent;
+  cursor: pointer;
 
   color: inherit;
   text-decoration: none;
@@ -66,5 +69,74 @@
     width: 84%;
     max-width: 960px;
     margin: 0 auto;
+  }
+}
+
+@mixin vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+//Миксины проекта
+
+@mixin btn-black() {
+  display: block;
+
+  padding: 8px;
+
+  border: 1px solid $sep-d;
+  
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+
+  transition: border-color 0.1s,
+              background-color 0.1s,
+              color 0.1s; 
+
+  &:hover {
+    border: 1px solid $sep-d-hov;   
+  }
+    &:active {
+    border: 1px solid #252525;    
+    background-color: #252525;
+  }
+}
+
+@mixin btn-light {
+  display: block; 
+
+  padding: 8px 0; 
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;  
+  text-transform: uppercase;
+  text-align: center; 
+  color: inherit;
+  text-decoration: none;
+
+  border: 1px solid $sep;
+  transition: border-color 0.1s,
+              background-color 0.1s,
+              color 0.1s;
+
+  &:hover {
+    border-color: $sep-hov;
+  }
+
+  &:active {
+    background-color: $sep-hov;
+    color: #a99f95;
   }
 }

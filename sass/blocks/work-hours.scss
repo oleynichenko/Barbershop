@@ -1,0 +1,54 @@
+.work-hours {
+	padding: 15px;
+	padding-left: 110px;
+
+	border: 1px solid $sep-d-hov;
+	background-image: url(../../img/clock.png);
+	background-repeat: no-repeat;
+	background-position: 20px 12px;
+	background-size: 60px 60px;
+} 
+
+.work-hours__text {
+	font-size: 20px;
+  line-height: 27px; 
+}
+
+@media ($tablet-width) {
+	.work-hours {
+		padding: 40px;
+		padding-left: 185px;
+
+		background-position: 30px 20px;
+		background-size: 70px 70px;
+	} 
+
+	.work-hours__text {
+		font-size: 30px;
+	  line-height: 30px; 
+	  text-transform: uppercase;
+	  letter-spacing: 1px;
+	  font-weight: bold;
+	}
+}
+
+@media ($desktop-width) {
+
+	.work-hours {
+		box-sizing: border-box;
+		padding: 20px 60px;
+		padding-top: 200px;
+
+		background-position: 60px 35px;
+		background-size: 140px 140px;
+	} 
+
+	.work-hours__text {
+		font-size: 20px;
+	  line-height: 27px; 
+	  text-transform: none;
+	  font-weight: normal;
+		text-align: center;
+	}
+
+}

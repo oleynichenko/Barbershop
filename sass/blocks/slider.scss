@@ -1,6 +1,3 @@
-// .slider__item {
-// 	display: none;
-// }
 .slider__input {
 
 	&[id*="input-1"]:checked ~ .slider__items .slider__item:nth-child(1) {
