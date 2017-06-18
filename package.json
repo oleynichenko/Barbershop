@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Html Academy project",
   "scripts": {
-    "test": "test",
+    "build": "build",
     "start": "gulp serve"
   },
   "author": "Alex Oleynichenko",

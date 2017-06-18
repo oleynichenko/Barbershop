@@ -7,18 +7,16 @@
 	border: 1px solid $sep;
 	color: #000;
 	background-color: $bg-white;
+}
 
-	&::after {
-		@include pseudo;
-    bottom: -35px; 
-    left: 0;
+.reviews__triangle {
+	position: absolute;
+	bottom: -35px;
+	left: 0;
 
-    width: 100%;
-    height: 35px;	
+	height: 35px;
 
-    background-color: $bg-white;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-	}
+	fill: $bg-white;
 }
 
 .reviews__wrapper {
@@ -114,11 +112,12 @@ input[id="reviews-input-3"]:checked ~ .reviews__toggles label[for="reviews-input
 	.reviews {
 		padding-top: 45px;
 		padding-bottom: 75px;
-
-		&::after {
-			display: none;
-		}
 	}
+
+	.reviews__triangle {
+		display: none;
+	}
+	
 	.reviews__wrapper {
 		position: relative;
 	}

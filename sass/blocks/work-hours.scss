@@ -1,26 +1,38 @@
 .work-hours {
-	padding: 15px;
-	padding-left: 110px;
+	display: flex;	
+	align-items: center;
+	
 
-	border: 1px solid $sep-d-hov;
-	background-image: url(../../img/clock.png);
-	background-repeat: no-repeat;
-	background-position: 20px 12px;
-	background-size: 60px 60px;
+  &::before {
+		content: "";
+		flex-shrink: 0;
+
+		width: 60px;
+		height: 60px;	
+
+		margin-left: auto;	
+		margin-right: 8%;	
+
+		background-image: url(../../img/clock.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+  }
 } 
 
 .work-hours__text {
+	margin-right: auto;
+
 	font-size: 20px;
   line-height: 27px; 
 }
 
 @media ($tablet-width) {
 	.work-hours {
-		padding: 40px;
-		padding-left: 185px;
 
-		background-position: 30px 20px;
-		background-size: 70px 70px;
+		&::before {
+			width: 70px;
+			height: 70px;	
+		}
 	} 
 
 	.work-hours__text {
@@ -33,14 +45,18 @@
 }
 
 @media ($desktop-width) {
-
 	.work-hours {
-		box-sizing: border-box;
-		padding: 20px 60px;
-		padding-top: 200px;
+		display: block;	
+		width: 140px;	
 
-		background-position: 60px 35px;
-		background-size: 140px 140px;
+		&::before {
+			display: block;	
+			width: 140px;	
+			height: 140px;
+
+			margin: 0;
+			margin-bottom: 30px;	
+		}
 	} 
 
 	.work-hours__text {

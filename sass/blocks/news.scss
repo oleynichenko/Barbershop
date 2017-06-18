@@ -42,6 +42,28 @@
 	border-bottom: 1px solid $sep;
 }
 
+.news__item a {
+	display: block;	
+	text-decoration: none;
+}
+
+.news__item a p {
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	transition: text-decoration-color	0.1s,
+							color 0.1s;
+}
+
+.news__item a:hover p {
+	color: $brown-light;
+	text-decoration-color: $brown-light;
+}
+
+.news__item a:active p {
+	color: #6a4d38;
+	text-decoration-color: #6a4d38;
+}	
+
 .news__item:nth-child(2) {
 	margin-bottom: 0px;
 
@@ -66,6 +88,8 @@
 
 	color: #fff;
 	background-color: #000;	
+	transition: color 0.1s,
+							background-color	0.1s;
 
 	&::after {
 		@include pseudo;
@@ -77,9 +101,27 @@
 
     background-color: #000;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transition: background-color 0.1s;
 	}
 }
 
+.news__item a:hover .news__date {
+	background-color: $brown-light;
+
+	&::after {
+		background-color: $brown-light;
+	}
+}
+
+.news__item a:active .news__date {
+	background-color: #6a4d38;
+	color: rgba(#fff, 0.3);
+
+	&::after {
+		background-color: #6a4d38;
+	}
+
+}
 .news__date b {
 	font-size: 30px;
 	line-height: 30px;

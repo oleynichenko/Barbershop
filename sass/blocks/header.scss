@@ -16,7 +16,7 @@
 	margin-top: 27px;
 }
 
-@media ($tablet-width) {
+@media (#{$tablet-width}) {
 	.header__logo {
 		order: 2;
 
@@ -31,12 +31,17 @@
 			height: 215px;
 		}
 	}
+  
+  @media #{$retina} {
+  		background-image: url(../../img/bg-2x.jpg);
+  		background-size: 	1200px auto;
+  }
 
 	.header__logo img {
-		width: 370px;
-		height: 101px;
+		width: auto;
+		height: auto;
 
-		margin-top: 30px;
+		margin-top: 50px;
 	}
 }
 
@@ -52,9 +57,13 @@
 	}
 	
 	.header__logo img {
-		width: 370px;
-		height: 153px;
+		// width: 370px;
+		// height: 153px;
 
+		margin-top: 150px;
+	}
+
+	.header__logo--short-height img {
 		margin-top: 50px;
 	}
 }

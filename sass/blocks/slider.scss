@@ -12,3 +12,18 @@
 		display: block;
 	}
 }
+
+.slider__item {
+	animation: sliding 1s;
+}
+
+@keyframes sliding {
+	0% {
+		transform: translateX(-500px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}

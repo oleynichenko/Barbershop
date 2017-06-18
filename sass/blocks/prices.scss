@@ -1,9 +1,20 @@
 .prices {
+	position: relative;
+
 	padding-top: 55px;
 	padding-bottom: 5%;	
 
 	background-color: $bg-darkgrey;
 	color: #fff;
+}
+
+.prices__triangle {
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+
+	height: 35px;
+	fill: $bg-darkgrey;
 }
 
 .prices__wrapper {
@@ -38,7 +49,10 @@
 }
 
 .prices__work-hours {
-	margin: 0 20px;
+	margin: 0 7%;
+	padding: 5%;
+
+	border: 1px solid $sep-d-hov;
 }
 
 @media ($mobile-width-only) {
@@ -56,19 +70,28 @@
 
 			margin-bottom: 5%;
 		}
+
+		& td {
+			padding-right: 10px;
+		}
 	}
 
 	.prices__head-washing {
 		order: 3;
 
-		width: 100%;
+		min-width: 100%;
 	}
+
 }
 
 @media ($tablet-width) {
 	.prices {
 		padding-top: 80px;
 		padding-bottom: 55px;	
+	}
+
+	.prices__triangle {
+		display: none;
 	}
 
 	.prices__title {
@@ -114,6 +137,7 @@
 
 	 .prices__work-hours {
 			margin: 0;
+			padding: 40px;
 		}
 }
 
@@ -137,6 +161,9 @@
 	}
 
 	.prices__work-hours {
-		width: 270px;
+		display: flex;	
+		padding: 0 65px;	
+		padding-top: 35px;	
+		padding-bottom: 25px;	
 	}
 }
