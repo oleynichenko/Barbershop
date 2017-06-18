@@ -2,11 +2,7 @@
 	position: relative;
 
 	min-height: 50px;	
-	// width: 320px;
 	width: auto;
-
-	// margin: 0 auto;
-
 	color: #fff;
 }
 
@@ -202,6 +198,7 @@
 		display: block;
 	}
 }
+
 @media ($tablet-width) {
 	.main-nav {
 		width: auto;	
