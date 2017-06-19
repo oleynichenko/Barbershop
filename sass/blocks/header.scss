@@ -23,7 +23,7 @@
 		height: 400px;
 
 		background-color: #000000;
-		background-image: url(../../img/bg.jpg);	
+		background-image: url(../img/bg.jpg);	
 		background-repeat: no-repeat;
 		background-position:  center -15px;
 
@@ -34,7 +34,7 @@
   
   @media #{$retina} {
   	.header__logo {
-  		background-image: url(../../img/bg-2x.jpg);
+  		background-image: url(../img/bg-2x.jpg);
   		background-size: 	1200px auto;
 		  }
 		}
@@ -59,8 +59,6 @@
 	}
 	
 	.header__logo img {
-		// width: 370px;
-		// height: 153px;
 
 		margin-top: 150px;
 	}
